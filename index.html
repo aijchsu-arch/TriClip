@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f3b">
+  <meta name="description" content="以 TriClip G4 訓練教材為基礎的繁體中文互動教育網站，提供 Heart Team 病人選擇、影像、器材、流程與知識測驗。">
+  <title>TriClip Learning Lab｜G4 專業教學</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <aside class="sidebar" aria-label="主選單">
+    <a class="brand" href="#overview" aria-label="TriClip Learning Lab 首頁">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M18 5C8 4 2 17 10 24c5 5 9-1 8-8C16 5 31 5 31 17c0 11-14 15-19 10"/></svg></span>
+      <span>TriClip<span class="brand-sub">LEARNING LAB</span></span>
+    </a>
+    <div class="course-label">G4 專業教學 <span>第一版</span></div>
+    <nav id="navigation" aria-label="課程導覽"></nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-progress"><span>我的學習進度</span><strong id="nav-progress">0 / 0</strong></div>
+      <div class="progress-track sidebar-track"><span id="nav-progress-bar"></span></div>
+      <p>進度儲存在此瀏覽器</p>
+      <button class="reset-link" data-action="reset-open">重設學習進度</button>
+      <div class="sidebar-note">FOR THE HEART TEAM<br><span>獨立教育專案 · 非 Abbott 官方網站</span></div>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>專業教育 <span class="breadcrumb-dot">/</span> <span id="breadcrumb">課程總覽</span></span><span class="audience"><span class="status-dot"></span> 醫師 / Heart Team</span></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><strong>學習，連結臨床思考。</strong><p>教育用途；不取代當地最新 IFU、正式器材訓練及 Heart Team 判斷。</p><span>TriClip Learning Lab · G4</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><div class="dialog-content"><span class="eyebrow">LOCAL LEARNING DATA</span><h2 id="reset-title">重新開始學習？</h2><p>將清除此瀏覽器的模組完成紀錄與測驗最佳成績。教材內容不受影響。</p><div class="button-row"><button class="button secondary" data-action="reset-cancel" autofocus>保留紀錄</button><button class="button" data-action="reset-confirm">清除學習紀錄</button></div></div></dialog>
+  <noscript><div class="noscript">請啟用 JavaScript，以使用學習模組、流程導覽與測驗。</div></noscript>
+</body>
+</html>
